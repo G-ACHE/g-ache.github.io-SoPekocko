@@ -9,7 +9,7 @@ const multer = require('../middleware/multer-config');
 
 const auth = require("../middleware/auth");
 
-// creation des routes de post des sauces, des modif get et supprimer sauces
+// creation des routes de post des sauces, des modif get et de la suppression des sauces
 
 router.get("", auth, saucesCtrl.getAllSauce);
 router.post("", auth, multer, saucesCtrl.createSauce);

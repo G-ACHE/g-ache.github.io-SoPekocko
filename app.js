@@ -1,4 +1,5 @@
 // variables de stockage module npm
+
 const express = require('express');
 
 const path = require('path');
@@ -13,7 +14,7 @@ const userRoutes = require("./routes/user");
 
 const URL = "mongodb+srv://G-ACHE:MeJuhlGpsJkYF4P8@cluster0.s52j4.mongodb.net/SoPekocko?retryWrites=true&w=majority";
 
-// connection a la base de donnee
+// connection a la base de donnée
 
 mongoose.connect(URL,{
     useNewUrlParser: true,
@@ -30,6 +31,8 @@ const app = express();
 app.use(express.json());
 
 app.use(cors());  
+
+// gère les images dans le fichier
 
 app.use("/images", express.static(path.join(__dirname, '/images')));
 

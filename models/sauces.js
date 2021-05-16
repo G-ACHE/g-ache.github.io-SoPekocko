@@ -1,3 +1,5 @@
+// variable module mongoose
+
 const mongoose = require("mongoose");
 
 // declaration du schema de chaque sauce

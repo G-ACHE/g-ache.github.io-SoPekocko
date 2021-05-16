@@ -1,6 +1,8 @@
-
+// variables module npm multer
 
 const multer = require('multer');
+
+// logique pour les telechargements de fichiers et modification d images avec multer
 
 const storage = multer.diskStorage({
     destination : (req, file, callback) => {
